@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design - Flexbox & Grid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with Flexbox Navigation -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">FlexGrid</div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Modern Responsive Web Design</h1>
+            <p>Learn how to create flexible layouts using CSS Flexbox and Grid with responsive design principles</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Features Section with CSS Grid -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-img">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Fully Responsive</h3>
+                        <p>Your website will look great on any device, from mobile phones to desktop computers.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-img">
+                        <i class="fas fa-th"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>CSS Grid Layout</h3>
+                        <p>Create complex two-dimensional layouts with CSS Grid for modern web applications.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-img">
+                        <i class="fas fa-th-large"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Flexbox Components</h3>
+                        <p>Use Flexbox for flexible one-dimensional layouts that adapt to different screen sizes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section with Flexbox -->
+    <section class="section testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <p class="testimonial-text">"This responsive design approach completely transformed our website. Now we have a consistent experience across all devices."</p>
+                    <div class="testimonial-author">
+                        <div class="author-img">JD</div>
+                        <div>
+                            <h4>John Doe</h4>
+                            <p>Marketing Director</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"The combination of Flexbox and Grid gave us the flexibility we needed for our complex dashboard layout. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-img">SM</div>
+                        <div>
+                            <h4>Sarah Miller</h4>
+                            <p>Product Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"Our conversion rates increased by 40% after implementing these responsive techniques. The mobile experience is now flawless."</p>
+                    <div class="testimonial-author">
+                        <div class="author-img">RJ</div>
+                        <div>
+                            <h4>Robert Johnson</h4>
+                            <p>E-commerce Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section with CSS Grid -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Pricing Plans</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Basic</h3>
+                    </div>
+                    <div class="pricing-price">$19<span>/month</span></div>
+                    <ul class="pricing-features">
+                        <li>Responsive Layout</li>
+                        <li>Flexbox Components</li>
+                        <li>Basic Support</li>
+                        <li>5GB Storage</li>
+                    </ul>
+                    <div class="pricing-cta">
+                        <a href="#" class="btn">Get Started</a>
+                    </div>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Pro</h3>
+                    </div>
+                    <div class="pricing-price">$49<span>/month</span></div>
+                    <ul class="pricing-features">
+                        <li>Advanced Grid Layout</li>
+                        <li>Flexbox & Grid Mix</li>
+                        <li>Priority Support</li>
+                        <li>20GB Storage</li>
+                    </ul>
+                    <div class="pricing-cta">
+                        <a href="#" class="btn">Get Started</a>
+                    </div>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                    </div>
+                    <div class="pricing-price">$99<span>/month</span></div>
+                    <ul class="pricing-features">
+                        <li>Custom Layout Solutions</li>
+                        <li>Advanced Animations</li>
+                        <li>24/7 Support</li>
+                        <li>Unlimited Storage</li>
+                    </ul>
+                    <div class="pricing-cta">
+                        <a href="#" class="btn">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with CSS Grid -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>FlexGrid</h3>
+                    <p>Creating responsive websites with modern CSS techniques for better user experiences.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Web Design St.</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@flexgrid.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 FlexGrid. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
