@@ -3,211 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Web Design - Flexbox & Grid</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>JavaScript Fundamentals</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header with Flexbox Navigation -->
-    <header>
-        <div class="container nav-container">
-            <div class="logo">FlexGrid</div>
-            <div class="hamburger" id="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-    </header>
+    <div class="container">
+        <header>
+            <h1>JavaScript Fundamentals</h1>
+            <p class="subtitle">Mastering variables, conditionals, functions, loops, and DOM manipulation</p>
+        </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container hero-content">
-            <h1>Modern Responsive Web Design</h1>
-            <p>Learn how to create flexible layouts using CSS Flexbox and Grid with responsive design principles</p>
-            <a href="#" class="btn">Get Started</a>
-        </div>
-    </section>
-
-    <!-- Features Section with CSS Grid -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Key Features</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-img">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <div class="feature-content">
-                        <h3>Fully Responsive</h3>
-                        <p>Your website will look great on any device, from mobile phones to desktop computers.</p>
-                    </div>
+        <div class="grid">
+            <!-- Part 1: JavaScript Basics -->
+            <div class="card">
+                <h2>Part 1: JavaScript Basics</h2>
+                <p>Variables, conditionals, and user input</p>
+                
+                <div class="code-example">
+                    // Variables and conditionals<br>
+                    let userName = "";<br>
+                    let userAge = 0;<br>
+                    let isAdult = false;
                 </div>
-                <div class="feature-card">
-                    <div class="feature-img">
-                        <i class="fas fa-th"></i>
-                    </div>
-                    <div class="feature-content">
-                        <h3>CSS Grid Layout</h3>
-                        <p>Create complex two-dimensional layouts with CSS Grid for modern web applications.</p>
-                    </div>
+                
+                <div class="output" id="basic-output">
+                    Enter your information to see results.
                 </div>
-                <div class="feature-card">
-                    <div class="feature-img">
-                        <i class="fas fa-th-large"></i>
-                    </div>
-                    <div class="feature-content">
-                        <h3>Flexbox Components</h3>
-                        <p>Use Flexbox for flexible one-dimensional layouts that adapt to different screen sizes.</p>
-                    </div>
+                
+                <div>
+                    <input type="text" id="name-input" placeholder="Enter your name">
+                    <input type="number" id="age-input" placeholder="Enter your age">
+                    <button onclick="processUserData()">Submit</button>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Testimonials Section with Flexbox -->
-    <section class="section testimonials">
-        <div class="container">
-            <h2 class="section-title">What Our Clients Say</h2>
-            <div class="testimonials-container">
-                <div class="testimonial">
-                    <p class="testimonial-text">"This responsive design approach completely transformed our website. Now we have a consistent experience across all devices."</p>
-                    <div class="testimonial-author">
-                        <div class="author-img">JD</div>
-                        <div>
-                            <h4>John Doe</h4>
-                            <p>Marketing Director</p>
-                        </div>
-                    </div>
+            <!-- Part 2: JavaScript Functions -->
+            <div class="card">
+                <h2>Part 2: JavaScript Functions</h2>
+                <p>Reusable blocks of code</p>
+                
+                <div class="function-demo">
+                    <h3>Temperature Converter</h3>
+                    <input type="number" id="temp-input" placeholder="Enter temperature">
+                    <select id="conversion-type">
+                        <option value="cToF">Celsius to Fahrenheit</option>
+                        <option value="fToC">Fahrenheit to Celsius</option>
+                    </select>
+                    <button onclick="convertTemperature()">Convert</button>
+                    <div class="output" id="temp-result"></div>
                 </div>
-                <div class="testimonial">
-                    <p class="testimonial-text">"The combination of Flexbox and Grid gave us the flexibility we needed for our complex dashboard layout. Highly recommended!"</p>
-                    <div class="testimonial-author">
-                        <div class="author-img">SM</div>
-                        <div>
-                            <h4>Sarah Miller</h4>
-                            <p>Product Manager</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <p class="testimonial-text">"Our conversion rates increased by 40% after implementing these responsive techniques. The mobile experience is now flawless."</p>
-                    <div class="testimonial-author">
-                        <div class="author-img">RJ</div>
-                        <div>
-                            <h4>Robert Johnson</h4>
-                            <p>E-commerce Owner</p>
-                        </div>
-                    </div>
+                
+                <div class="function-demo">
+                    <h3>String Formatter</h3>
+                    <input type="text" id="format-input" placeholder="Enter text">
+                    <select id="format-type">
+                        <option value="uppercase">UPPERCASE</option>
+                        <option value="lowercase">lowercase</option>
+                        <option value="capitalize">Capitalize Words</option>
+                    </select>
+                    <button onclick="formatString()">Format Text</button>
+                    <div class="output" id="format-result"></div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Pricing Section with CSS Grid -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Pricing Plans</h2>
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Basic</h3>
+        <div class="grid">
+            <!-- Part 3: JavaScript Loops -->
+            <div class="card">
+                <h2>Part 3: JavaScript Loops</h2>
+                <p>Repetition and iteration</p>
+                
+                <div class="loop-demo">
+                    <h3>Number Loops</h3>
+                    <button onclick="runCounter()">Run Counter (1-10)</button>
+                    <button onclick="runEvenCounter()">Even Numbers (0-20)</button>
+                    <div class="output" id="loop-output"></div>
+                </div>
+                
+                <div class="loop-demo">
+                    <h3>Array Iteration</h3>
+                    <button onclick="processArray()">Process Array</button>
+                    <div class="array-display" id="array-display">
+                        <span class="array-item">5</span>
+                        <span class="array-item">12</span>
+                        <span class="array-item">8</span>
+                        <span class="array-item">130</span>
+                        <span class="array-item">44</span>
                     </div>
-                    <div class="pricing-price">$19<span>/month</span></div>
-                    <ul class="pricing-features">
-                        <li>Responsive Layout</li>
-                        <li>Flexbox Components</li>
-                        <li>Basic Support</li>
-                        <li>5GB Storage</li>
+                    <div class="output" id="array-output"></div>
+                </div>
+            </div>
+
+            <!-- Part 4: DOM Manipulation -->
+            <div class="card">
+                <h2>Part 4: DOM Manipulation</h2>
+                <p>Interacting with the webpage</p>
+                
+                <div class="dom-demo">
+                    <h3>Content Updates</h3>
+                    <button onclick="changeText()">Change Text</button>
+                    <button onclick="toggleColor()">Toggle Background</button>
+                    <button onclick="addItem()">Add List Item</button>
+                    <div class="output" id="dom-output">This text will change.</div>
+                    <ul id="item-list">
+                        <li>Initial item</li>
                     </ul>
-                    <div class="pricing-cta">
-                        <a href="#" class="btn">Get Started</a>
-                    </div>
                 </div>
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Pro</h3>
-                    </div>
-                    <div class="pricing-price">$49<span>/month</span></div>
-                    <ul class="pricing-features">
-                        <li>Advanced Grid Layout</li>
-                        <li>Flexbox & Grid Mix</li>
-                        <li>Priority Support</li>
-                        <li>20GB Storage</li>
-                    </ul>
-                    <div class="pricing-cta">
-                        <a href="#" class="btn">Get Started</a>
-                    </div>
-                </div>
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Enterprise</h3>
-                    </div>
-                    <div class="pricing-price">$99<span>/month</span></div>
-                    <ul class="pricing-features">
-                        <li>Custom Layout Solutions</li>
-                        <li>Advanced Animations</li>
-                        <li>24/7 Support</li>
-                        <li>Unlimited Storage</li>
-                    </ul>
-                    <div class="pricing-cta">
-                        <a href="#" class="btn">Get Started</a>
-                    </div>
+                
+                <div class="dom-demo">
+                    <h3>User Cards</h3>
+                    <input type="text" id="user-name" placeholder="Name">
+                    <input type="text" id="user-role" placeholder="Role">
+                    <button onclick="createUserCard()">Create Card</button>
+                    <div id="user-cards"></div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Footer with CSS Grid -->
     <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-column">
-                    <h3>FlexGrid</h3>
-                    <p>Creating responsive websites with modern CSS techniques for better user experiences.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <h3>Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Resources</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">API</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Contact</h3>
-                    <ul class="footer-links">
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Web Design St.</li>
-                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
-                        <li><i class="fas fa-envelope"></i> info@flexgrid.com</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2023 FlexGrid. All rights reserved.</p>
-            </div>
-        </div>
+        <p>JavaScript Fundamentals Assignment &copy; 2023</p>
     </footer>
 
     <script src="script.js"></script>
